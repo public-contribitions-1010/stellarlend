@@ -1,7 +1,7 @@
 {
   "name": "stellarlend",
   "version": "1.0.0",
-  "description": "StellarLend monorepo – pre-commit tooling and workspace scripts",
+  "description": "StellarLend monorepo \u2013 pre-commit tooling and workspace scripts",
   "private": true,
   "workspaces": [
     "api",
@@ -21,7 +21,7 @@
     "format:all": "npm run format:api && npm run format:oracle",
     "typecheck:all": "npm run typecheck:api && npm run typecheck:oracle",
     "test:all": "npm run test --workspace=api && npm run test --workspace=oracle",
-    "build:all": "npm run build --workspace=api && npm run build --workspace=oracle",
+    "build:all": "node init && npm run build --workspace=api && npm run build --workspace=oracle",
     "install:all": "npm install --workspaces"
   },
   "devDependencies": {
